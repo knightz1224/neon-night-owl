@@ -1,22 +1,35 @@
 local colors = {
     gray = "#7e8294",
     gray_alt = "#4C566A",
-    red = "#ec7279",
-    yellow = "#ECBE7B",
-    orange = "#da8548",
-    green = "#a0c980",
-    cyan = "#7FDBCA",
-    dark_cyan = "#21C7A8",
-    blue = "#82AAFF",
-    violet = "#a9a1e1",
-    purple = "#d38aea",
+    red = "#fc514e",
+    yellow = "#e3d18a",
+    orange = "#f78c6c",
+    green = "#a1cd5e",
+    cyan = "#7fdbca",
+    dark_cyan = "#21c7a8",
+    blue = "#82aaff",
+    violet = "#c792ea",
+    purple = "#ae81ff",
     light_blue = "#82AAFF",
     light_pink = "#D8BFD8",
     disabled = "#676E95",
-    diff_red = "#fb4934",
-    diff_green = "#8ec07c",
-    diff_blue = "#458588",
-    diff_yellow = "#fabd2f",
+    diff_red = "#fc514e",
+    diff_green = "#a1cd5e",
+    diff_blue = "#82aaff",
+    diff_yellow = "#e3d18a",
+    watermelon = "#ff5874",
+    tan = "#ecc48d",
+    indigo = '#5e97ec',
+    black_blue = "#081e2f",
+    dark_blue  = "#092236",
+    deep_blue  = "#0e293f",
+    slate_blue = "#2c3043",
+    regal_blue = "#1d3b53",
+    cyan_blue  = "#296596",
+    steel_blue = "#4b6479",
+    grey_blue  = "#7c8f8f",
+    cadet_blue = "#a1aab8",
+    white_blue = "#d6deeb",
     none = "NONE"
 }
 
@@ -24,10 +37,17 @@ function colors.generate()
     if vim.g.neon_style == "default" or vim.g.neon_style == "" then
         colors.fg = "#c5cdd9"
         colors.bg0 = "#2b2d37"
-        colors.bg1 = "#ecc48d"
+        colors.bg1 = "#333644"
         colors.bg2 = "#363a49"
         colors.bg3 = "#3a3e4e"
         colors.bg4 = "#404455"
+    elseif vim.g.neon_style == "night_owl" then
+        colors.fg = "#c3ccdc"
+        colors.bg0 = "#011627"
+        colors.bg1 = "#"
+        colors.bg2 = "#1c1f24"
+        colors.bg3 = "#3f444a"
+        colors.bg4 = "#23272e"
     elseif vim.g.neon_style == "doom" then
         colors.fg = "#bbc2cf"
         colors.bg0 = "#282c34"
@@ -37,10 +57,10 @@ function colors.generate()
         colors.bg4 = "#23272e"
     elseif vim.g.neon_style == "dark" then
         colors.fg = "#c5cdd9"
-        colors.bg0 = "#011627"
+        colors.bg0 = "#0d1117"
         colors.bg1 = "#161b22"
         colors.bg2 = "#21262d"
-        colors.bg3 = "#ecc48d"
+        colors.bg3 = "#333644"
         colors.bg4 = "#363a49"
     elseif vim.g.neon_style == "light" then
         colors.fg = "#4C566A"
