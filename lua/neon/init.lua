@@ -34,54 +34,58 @@ local function set_groups()
         Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
         SignColumn = {fg = c.green, bg = c.bg0},
         EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
-        NormalFloat = {fg = c.cadet_blue, bg = c.bg2}, -- normal text and background color for floating windows
-        FloatBorder = {fg = c.slate_blue, bg = c.bg2},
+        NormalFloat = {fg = c.cadet_blue, bg = c.bg0}, -- normal text and background color for floating windows
+        FloatBorder = {fg = c.slate_blue, bg = c.bg0},
         ColorColumn = {fg = c.none, bg = c.black_blue}, --  used for the columns set with 'colorcolumn'
         Conceal = {fg = c.deep_blue}, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor = {fg = c.blue, bg = c.none, style = "reverse"}, -- the character under the cursor
         CursorIM = {fg = c.blue, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
+        lCursor = {fg = c.bg0, bg = c.cadet_blue},
         Directory = {fg = c.emerald, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
         DiffAdd = {fg = c.diff_green, bg = c.none, style = "reverse"}, -- diff mode: Added line
         DiffChange = {fg = c.diff_blue, bg = c.none, style = "reverse"}, --  diff mode: Changed line
         DiffDelete = {fg = c.diff_red, bg = c.none, style = "reverse"}, -- diff mode: Deleted line
         DiffText = {fg = c.fg, bg = c.none, style = "reverse"}, -- diff mode: Changed text within a changed line
         ErrorMsg = {fg = c.red}, -- error messages
-        Folded = {fg = c.gray, c.none, style = "italic"},
-        FoldColumn = {fg = c.blue},
-        IncSearch = {style = "reverse"},
-        LineNr = {fg = c.disabled},
-        CursorLineNr = {fg = c.cyan},
-        MatchParen = {bg = c.regal_blue, style = "underline,bold"},
-        ModeMsg = {fg = c.cyan, style = cfg.bold},
-        MoreMsg = {fg = c.cyan, style = cfg.bold},
-        NonText = {fg = c.bg3},
-        Pmenu = {fg = c.fg, bg = c.bg4},
-        PmenuSel = {fg = c.bg0, bg = c.blue, style = "bold"},
-        PmenuSbar = {fg = c.fg, bg = c.bg2},
-        PmenuThumb = {fg = c.fg, bg = c.gray},
+        Folded = {fg = c.green, bg = c.dark_blue, style = "italic"},
+        FoldColumn = {fg = c.green, bg = c.slate_blue},
+        IncSearch = {fg = c.peach, bg = c.bg0, style = "reverse"},
+        LineNr = {fg = c.steel_blue},
+        CursorColumn = {fg = c.none, bg = c.dark_blue},
+        CursorLine = {fg = c.none, bg = c.dark_blue},
+        CursorLineNr = {fg = c.blue, bg = c.dark_blue},
+        MatchParen = {bg = c.bg0, style = "underline,bold"},
+        ModeMsg = {fg = c.cadet_blue, style = cfg.bold},
+        MoreMsg = {fg = c.red, style = cfg.bold},
+        NonText = {fg = c.orange},
+        Pmenu = {fg = c.fg, bg = c.deep_blue},
+        PmenuSel = {fg = c.bg0, bg = c.cyan_blue, style = "bold"},
+        PmenuSbar = {fg = c.fg, bg = c.deep_blue},
+        PmenuThumb = {fg = c.fg, bg = c.steel_blue},
         Question = {fg = c.green, style = cfg.bold},
-        QuickFixLine = {fg = c.blue, bg = c.bg1, style = "bold,italic"},
+        Whitespace = {fg = c.deep_blue},
+        TermCursor = {bg = c.cadet_blue, fg=c.bg0},
+        QuickFixLine = {bg = c.deep_blue, style = "bold,italic"},
         qfLineNr = {fg = c.blue, bg = c.bg1},
-        Search = {style = "reverse"},
+        Search = {fg = c.orange, bg = c.bg0, style = "reverse"},
         SpecialKey = {fg = c.bg3},
         SpellBad = {fg = c.red, bg = c.none, style = "italic,undercurl"},
         SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
-        SpellLocal = {fg = c.cyan, bg = c.none, style = "italic,undercurl"},
-        SpellRare = {fg = c.cyan, bg = c.none, style = "italic,undercurl"},
-        StatusLine = {fg = c.blue, bg = c.bg0},
-        StatusLineNC = {fg = c.gray},
-        StatusLineTerm = {fg = c.fg, bg = c.bg3},
-        StatusLineTermNC = {fg = c.fg, bg = c.bg3},
+        SpellLocal = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
+        SpellRare = {fg = c.yellow, bg = c.none, style = "italic,undercurl"},
+        StatusLine = {fg = c.blue, bg = c.slate_blue},
+        StatusLineNC = {fg = c.cadet_blue, bg = c.slate_blue},
+        StatusLineTerm = {fg = c.blue, bg = c.slate_blue},
+        StatusLineTermNC = {fg = c.cadet_blue, bg = c.slate_blue},
         TabLineFill = {fg = c.slate_blue, bg = c.slate_blue},
         TablineSel = {fg = c.blue, bg = c.slate_blue},
         Tabline = {fg = c.cadet_blue, bg = c.slate_blue},
-        Title = {fg = c.cyan, bg = c.none, style = cfg.bold},
-        Visual = {fg = c.none, style = "reverse"},
+        Title = {fg = c.orange, bg = c.none, style = cfg.bold},
+        Visual = {fg = c.none, bg = c.regal_blue, style = "reverse"},
+        VisualInDiff = {fg = c.fg, bg = c.regal_blue},
         VisualNOS = {fg = c.none, style = "reverse"},
         WarningMsg = {fg = c.orange, style = cfg.bold},
-        WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
-        CursorColumn = {fg = c.none, bg = c.dark_blue},
-        CursorLine = {fg = c.none, bg = c.dark_blue},
+        WildMenu = {fg = c.bg0, bg = c.cyan_blue, style = "bold"},
         ToolbarLine = {fg = c.fg, bg = c.bg1},
         ToolbarButton = {fg = c.fg, bg = c.none, style = "bold"},
         NormalMode = {fg = c.cyan, bg = c.none, style = "reverse"},
@@ -95,41 +99,41 @@ local function set_groups()
         healthSuccess = {fg = c.green},
         healthWarning = {fg = c.orange},
         --common
-        Type = {fg = c.cyan}, -- int, long, char, etc.
-        StorageClass = {fg = c.cyan}, -- static, register, volatile, etc.
+        Type = {fg = c.emerald}, -- int, long, char, etc.
+        StorageClass = {fg = c.orange}, -- static, register, volatile, etc.
         Structure = {fg = c.indigo}, -- struct, union, enum, etc.
-        Constant = {fg = c.violet}, -- any constant
-        Comment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
+        Constant = {fg = c.orange}, -- any constant
+        Comment = {fg = c.grey_blue, bg = c.none, style = cfg.italic_comment},
         Conditional = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic if, then, else, endif, switch, etc.
         Keyword = {fg = c.violet, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
         Repeat = {fg = c.violet, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
         Boolean = {fg = c.watermelon, bg = c.none, style = cfg.italic_boolean}, -- true , false
         Function = {fg = c.blue, bg = c.none, style = cfg.italic_function .. cfg.bold},
-        Identifier = {fg = c.blue, bg = c.none, style = cfg.italic_variable}, -- any variable name
+        Identifier = {fg = c.turquoise, bg = c.none, style = cfg.italic_variable}, -- any variable name
         String = {fg = c.tan, bg = c.none}, -- Any string
-        Character = {fg = c.orange}, -- any character constant: 'c', '\n'
+        Character = {fg = c.purple}, -- any character constant: 'c', '\n'
         Number = {fg = c.red}, -- a number constant: 5
         Float = {fg = c.red}, -- a floating point constant: 2.3e10
-        Statement = {fg = c.blue}, -- any statement
-        Label = {fg = c.cyan}, -- case, default, etc.
-        Operator = {fg = c.blue}, -- sizeof", "+", "*", etc.
-        Exception = {fg = c.blue}, -- try, catch, throw
-        PreProc = {fg = c.orange}, -- generic Preprocessor
+        Statement = {fg = c.violet}, -- any statement
+        Label = {fg = c.turquoise}, -- case, default, etc.
+        Operator = {fg = c.watermelon}, -- sizeof", "+", "*", etc.
+        Exception = {fg = c.watermelon}, -- try, catch, throw
+        PreProc = {fg = c.watermelon}, -- generic Preprocessor
         Include = {fg = c.blue}, -- preprocessor #include
         Define = {fg = c.cyan}, -- preprocessor #define
         Macro = {fg = c.blue}, -- same as Define
         Typedef = {fg = c.cyan}, -- A typedef
         PreCondit = {fg = c.cyan}, -- preprocessor #if, #else, #endif, etc.
-        Special = {fg = c.blue, bg = c.none, style = "italic"}, -- any special symbol
+        Special = {fg = c.watermelon, bg = c.none, style = "italic"}, -- any special symbol
         SpecialChar = {fg = c.orange}, -- special character in a constant
         Tag = {fg = c.red}, -- you can use CTRL-] on this
-        Delimiter = {fg = c.yellow}, -- character that needs attention like , or .
+        Delimiter = {fg = c.fg}, -- character that needs attention like , or .
         SpecialComment = {fg = c.blue}, -- special things inside a comment
         Debug = {fg = c.red}, -- debugging statements
-        Underlined = {fg = c.cyan, bg = c.none, style = "underline"}, -- text that stands out, HTML links
-        Ignore = {fg = c.gray_alt}, -- left blank, hidden
+        Underlined = {fg = c.green, bg = c.none, style = "underline"}, -- text that stands out, HTML links
+        Ignore = {fg = c.blue}, -- left blank, hidden
         Error = {fg = c.red, bg = c.none, style = "bold,underline"}, -- any erroneous construct
-        Todo = {fg = c.cyan, bg = c.none, style = "bold,italic"}, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+        Todo = {fg = c.bg0, bg = c.yellow, style = "bold,italic"}, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
         -- HTML
         htmlArg = {fg = c.orange},
         htmlBold = {fg = c.orange, bg = c.none, style = "bold"},
