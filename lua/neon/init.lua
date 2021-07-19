@@ -193,7 +193,7 @@ local function set_groups()
         TSEmphasis = {fg = c.violet}, -- For text to be represented with emphasis.
         TSError = {fg = c.red}, -- For syntax/parser errors.
         TSException = {fg = c.blue}, -- For exception related keywords.
-        TSField = {fg = c.blue}, -- For fields.
+        TSField = {fg = c.turquoise}, -- For fields.
         TSFloat = {fg = c.red}, -- For floats.
         TSFunction = {fg = c.purple, style = cfg.italic_function .. cfg.bold}, -- For fuction (calls and definitions).
         TSFuncBuiltin = {fg = c.orange, style = cfg.italic_function}, -- For builtin functions: `table.insert` in Lua.
