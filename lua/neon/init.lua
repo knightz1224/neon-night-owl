@@ -36,7 +36,7 @@ local function set_groups()
         EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
         NormalFloat = {fg = c.cadet_blue, bg = c.bg2}, -- normal text and background color for floating windows
         FloatBorder = {fg = c.slate_blue, bg = c.bg2},
-        ColorColumn = {fg = c.none, bg = c.bg3}, --  used for the columns set with 'colorcolumn'
+        ColorColumn = {fg = c.none, bg = c.black_blue}, --  used for the columns set with 'colorcolumn'
         Conceal = {fg = c.deep_blue}, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor = {fg = c.cadet_blue, bg = c.none, style = "reverse"}, -- the character under the cursor
         CursorIM = {fg = c.cadet_blue, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
