@@ -252,9 +252,9 @@ local function set_groups()
         LspDiagnosticsFloatingHint = {fg = c.cyan, style = "bold"}, -- used for "Hint" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextHint = {fg = c.cyan, style = cfg.bold}, -- Virtual text "Hint"
         LspDiagnosticsUnderlineHint = {fg = c.cyan, style = "undercurl", sp = c.blue}, -- used to underline "Hint" diagnostics.
-        LspReferenceText =  {fg = c.violet, style = "reverse"}, -- used for highlighting "text" references
-        LspReferenceRead =  {fg = c.violet, style = "reverse"}, -- used for highlighting "read" references
-        LspReferenceWrite = {fg = c.violet, style = "reverse"}, -- used for highlighting "write" references
+        LspReferenceText =  {fg = c.dark_blue, style = "reverse"}, -- used for highlighting "text" references
+        LspReferenceRead =  {fg = c.dark_blue, style = "reverse"}, -- used for highlighting "read" references
+        LspReferenceWrite = {fg = c.dark_blue, style = "reverse"}, -- used for highlighting "write" references
         -- Plugins highlight groups
         -- LspTrouble
         LspTroubleText = {fg = c.bg4},
