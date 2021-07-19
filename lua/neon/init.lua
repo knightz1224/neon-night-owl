@@ -34,13 +34,13 @@ local function set_groups()
         Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
         SignColumn = {fg = c.green, bg = c.bg0},
         EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
-        NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
-        FloatBorder = {fg = c.blue, bg = c.bg2},
+        NormalFloat = {fg = c.cadet_blue, bg = c.bg2}, -- normal text and background color for floating windows
+        FloatBorder = {fg = c.slate_blue, bg = c.bg2},
         ColorColumn = {fg = c.none, bg = c.bg3}, --  used for the columns set with 'colorcolumn'
-        Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
-        Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- the character under the cursor
-        CursorIM = {fg = c.cyan, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
-        Directory = {fg = c.blue, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
+        Conceal = {fg = c.deep_blue}, -- placeholder characters substituted for concealed text (see 'conceallevel')
+        Cursor = {fg = c.cadet_blue, bg = c.none, style = "reverse"}, -- the character under the cursor
+        CursorIM = {fg = c.cadet_blue, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
+        Directory = {fg = c.emerald, bg = c.none, style = cfg.bold}, -- directory names (and other special names in listings)
         DiffAdd = {fg = c.diff_green, bg = c.none, style = "reverse"}, -- diff mode: Added line
         DiffChange = {fg = c.diff_blue, bg = c.none, style = "reverse"}, --  diff mode: Changed line
         DiffDelete = {fg = c.diff_red, bg = c.none, style = "reverse"}, -- diff mode: Deleted line
@@ -51,7 +51,7 @@ local function set_groups()
         IncSearch = {style = "reverse"},
         LineNr = {fg = c.disabled},
         CursorLineNr = {fg = c.cyan},
-        MatchParen = {fg = c.red, style = "underline,bold"},
+        MatchParen = {fg = c.regal_blue, style = "underline,bold"},
         ModeMsg = {fg = c.cyan, style = cfg.bold},
         MoreMsg = {fg = c.cyan, style = cfg.bold},
         NonText = {fg = c.bg3},

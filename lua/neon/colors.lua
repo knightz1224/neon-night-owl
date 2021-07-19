@@ -44,7 +44,7 @@ function colors.generate()
     elseif vim.g.neon_style == "night_owl" then
         colors.fg = "#c3ccdc"
         colors.bg0 = "#011627"
-        colors.bg1 = "#"
+        colors.bg1 = "#081e2f"
         colors.bg2 = "#1c1f24"
         colors.bg3 = "#3f444a"
         colors.bg4 = "#23272e"
