@@ -196,18 +196,18 @@ local function set_groups()
         TSField = {fg = c.turquoise}, -- For fields.
         TSFloat = {fg = c.red}, -- For floats.
         TSFunction = {fg = c.purple, style = cfg.italic_function .. cfg.bold}, -- For fuction (calls and definitions).
-        TSFuncBuiltin = {fg = c.orange, style = cfg.italic_function}, -- For builtin functions: `table.insert` in Lua.
+        TSFuncBuiltin = {fg = c.blue, style = cfg.italic_function}, -- For builtin functions: `table.insert` in Lua.
         TSFuncMacro = {fg = c.orange}, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         TSInclude = {fg = c.blue}, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         TSKeyword = {fg = c.blue, style = cfg.italic_keyword}, -- For keywords that don't fall in previous categories.
-        TSKeywordFunction = {fg = c.blue, style = cfg.italic_keyword}, -- For keywords used to define a fuction.
+        TSKeywordFunction = {fg = c.violet, style = cfg.italic_keyword}, -- For keywords used to define a fuction.
         TSLabel = {fg = c.cyan}, -- For labels: `label:` in C and `:label:` in Lua.
         TSLiteral = {fg = c.fg}, -- Literal text.
         TSMethod = {fg = c.purple, style = cfg.italic_function}, -- For method calls and definitions.
         TSNamespace = {fg = c.cyan}, -- For identifiers referring to modules and namespaces.
         TSNumber = {fg = c.red}, -- For all numbers
         TSOperator = {fg = c.blue}, -- For any operator: `+`, but also `->` and `*` in C.
-        TSParameter = {fg = c.violet}, -- For parameters of a function.
+        TSParameter = {fg = c.purple}, -- For parameters of a function.
         TSParameterReference = {fg = c.fg}, -- For references to parameters of a function.
         TSProperty = {fg = c.violet}, -- Same as `TSField`.
         TSPunctDelimiter = {fg = c.fg}, -- For delimiters ie: `.`
