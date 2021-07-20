@@ -178,7 +178,7 @@ local function set_groups()
         -- Dashboard
         DashboardShortCut = {fg = c.red},
         DashboardHeader = {fg = c.purple},
-        DashboardCenter = {fg = c.red},
+        DashboardCenter = {fg = c.blue},
         DashboardFooter = {fg = c.orange},
         -- TreeSitter highlight groups
         TSAnnotation = {fg = c.violet}, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
