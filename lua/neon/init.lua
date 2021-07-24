@@ -195,7 +195,7 @@ local function set_groups()
         TSException = {fg = c.blue}, -- For exception related keywords.
         TSField = {fg = c.turquoise}, -- For fields.
         TSFloat = {fg = c.red}, -- For floats.
-        TSFunction = {fg = c.purple, style = cfg.italic_function .. cfg.bold}, -- For fuction (calls and definitions).
+        TSFunction = {fg = c.blue, style = cfg.italic_function .. cfg.bold}, -- For fuction (calls and definitions).
         TSFuncBuiltin = {fg = c.blue, style = cfg.italic_function}, -- For builtin functions: `table.insert` in Lua.
         TSFuncMacro = {fg = c.orange}, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         TSInclude = {fg = c.blue}, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
@@ -203,7 +203,7 @@ local function set_groups()
         TSKeywordFunction = {fg = c.violet, style = cfg.italic_keyword}, -- For keywords used to define a fuction.
         TSLabel = {fg = c.cyan}, -- For labels: `label:` in C and `:label:` in Lua.
         TSLiteral = {fg = c.fg}, -- Literal text.
-        TSMethod = {fg = c.purple, style = cfg.italic_function}, -- For method calls and definitions.
+        TSMethod = {fg = c.blue, style = cfg.italic_function}, -- For method calls and definitions.
         TSNamespace = {fg = c.cyan}, -- For identifiers referring to modules and namespaces.
         TSNumber = {fg = c.red}, -- For all numbers
         TSOperator = {fg = c.blue}, -- For any operator: `+`, but also `->` and `*` in C.
@@ -213,14 +213,14 @@ local function set_groups()
         TSPunctDelimiter = {fg = c.fg}, -- For delimiters ie: `.`
         TSPunctBracket = {fg = c.purple}, -- For brackets and parens.
         TSPunctSpecial = {fg = c.yellow}, -- For special punctutation that does not fall in the catagories before.
-        TSRepeat = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- For keywords related to loops.
+        TSRepeat = {fg = c.violet, bg = c.none, style = cfg.italic_keyword}, -- For keywords related to loops.
         TSString = {fg = c.tan}, -- For strings.
         TSStringRegex = {fg = c.blue}, -- For regexes.
         TSStringEscape = {fg = c.watermelon}, -- For escape characters within a string.
         TSSymbol = {fg = c.orange}, -- For identifiers referring to symbols or atoms.
         TSStrike = {}, -- For strikethrough text.
         TSTitle = {fg = c.fg, bg = c.none, style = "bold"}, -- Text that is part of a title.
-        TSType = {fg = c.cyan}, -- For types.
+        TSType = {fg = c.emerald}, -- For types.
         TSTypeBuiltin = {fg = c.cyan}, -- For builtin types.
         TSTag = {fg = c.blue}, -- Tags like html tag names.
         TSTagDelimiter = {fg = c.blue}, -- Tag delimiter like `<` `>` `/`
@@ -228,7 +228,7 @@ local function set_groups()
         TSTextReference = {fg = c.orange}, -- FIXME
         TSUnderline = {fg = c.fg, bg = c.none, style = "underline"}, -- For text to be represented with an underline.
         TSURI = {fg = c.purple}, -- Any URL like a link or email.
-        TSVariable = {fg = c.cyan, style = cfg.italic_variable}, -- Any variable name that does not have another highlight.
+        TSVariable = {fg = c.white, style = cfg.italic_variable}, -- Any variable name that does not have another highlight.
         TSVariableBuiltin = {fg = c.green, style = cfg.italic_variable}, -- Variable names that are defined by the languages, like `this` or `self`.        TSConstBuiltin = {fg = orange}, -- For constant that are built in the language: `nil` in Lua.
         --TSNone =                    { },    -- TODO: docs
         -- Lsp highlight groups
