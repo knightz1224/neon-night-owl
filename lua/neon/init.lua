@@ -301,6 +301,11 @@ local function set_groups()
         SyntasticErrorSign = {fg = c.red},
         SyntasticWarningSign = {fg = c.yellow},
         -- Telescope
+        TelescopeBorder= {fg = c.slate_blue},
+        TelescopeMatching = {fg = c.orange},
+        TelescopeMultiSelection = {fg = c.watermelon},
+        TelescopePromptPrefix= {fg = c.blue},
+        TelescopeSelectionCaret= {fg = c.watermelon},
         TelescopePromptBorder = {fg = c.green},
         TelescopeResultsBorder = {fg = c.blue},
         TelescopePreviewBorder = {fg = c.purple},
