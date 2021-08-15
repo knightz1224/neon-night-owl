@@ -306,9 +306,6 @@ local function set_groups()
         TelescopeMultiSelection = {fg = c.watermelon},
         TelescopePromptPrefix= {fg = c.blue},
         TelescopeSelectionCaret= {fg = c.watermelon},
-        TelescopePromptBorder = {fg = c.green},
-        TelescopeResultsBorder = {fg = c.blue},
-        TelescopePreviewBorder = {fg = c.purple},
         -- Nerdtree
         NERDTreeDir = {fg = c.purple},
         NERDTreeDirSlash = {fg = c.blue},
