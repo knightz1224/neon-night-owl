@@ -116,7 +116,7 @@ local function set_groups()
         Float = {fg = c.red}, -- a floating point constant: 2.3e10
         Statement = {fg = c.violet}, -- any statement
         Label = {fg = c.turquoise}, -- case, default, etc.
-        Operator = {fg = c.watermelon}, -- sizeof", "+", "*", etc.
+        Operator = {fg = c.watermelon, style = cfg.italic_operator}, -- sizeof", "+", "*", etc.
         Exception = {fg = c.watermelon}, -- try, catch, throw
         PreProc = {fg = c.watermelon}, -- generic Preprocessor
         Include = {fg = c.blue}, -- preprocessor #include
@@ -206,7 +206,7 @@ local function set_groups()
         TSMethod = {fg = c.blue, style = cfg.italic_function}, -- For method calls and definitions.
         TSNamespace = {fg = c.cyan}, -- For identifiers referring to modules and namespaces.
         TSNumber = {fg = c.red}, -- For all numbers
-        TSOperator = {fg = c.blue}, -- For any operator: `+`, but also `->` and `*` in C.
+        TSOperator = {fg = c.blue, style = cfg.italic_operator}, -- For any operator: `+`, but also `->` and `*` in C.
         TSParameter = {fg = c.purple}, -- For parameters of a function.
         TSParameterReference = {fg = c.fg}, -- For references to parameters of a function.
         TSProperty = {fg = c.violet}, -- Same as `TSField`.

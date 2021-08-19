@@ -5,6 +5,7 @@ local settings = {
     italic_boolean = false,
     italic_function = false,
     italic_variable = false,
+    italic_operator = false,
     bold = false
 }
 
@@ -14,6 +15,7 @@ local styles = {
     italic_boolean = "italic",
     italic_function = "italic",
     italic_variable = "italic",
+    italic_operator = "italic",
     bold = "bold"
 }
 
@@ -49,6 +51,10 @@ if not tobool(vim.g.neon_italic_function) then
 end
 
 if not tobool(vim.g.neon_italic_variable) then
+    styles.italic_variable = "NONE"
+end
+
+if not tobool(vim.g.neon_italic_operator) then
     styles.italic_variable = "NONE"
 end
 
