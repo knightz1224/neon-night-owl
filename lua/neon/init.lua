@@ -378,8 +378,10 @@ local function set_groups()
     TargetWord = { fg = c.cyan },
     -- BufferLine
     BufferLineIndicatorSelected = { fg = c.green },
-    BufferLineFill = { bg = c.bg0 },
-    BufferLineBackground = { bg = c.bg0 },
+    BufferLineSeparator = { fg = c.regal_blue },
+    BufferLineSeparatorVisible = { fg = c.regal_blue },
+    BufferLineSeparatorSelected = { fg = c.regal_blue },
+    BufferLineFill = { bg = c.regal_blue },
     -- Sneak
     Sneak = { fg = c.bg0, bg = c.green },
     SneakScope = { bg = c.bg4 },
